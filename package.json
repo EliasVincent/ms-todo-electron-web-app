@@ -9,7 +9,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "linuxfactory": "electron-builder --linux"
   },
   "keywords": [],
   "author": {
@@ -17,6 +18,7 @@
     "email": "riesyeti@outlook.de"
   },
   "license": "MIT",
+  "homepage": "https://eliasvsimon.com",
   "config": {
     "forge": {
       "packagerConfig": {},
@@ -53,6 +55,21 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.53",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.53",
     "@electron-forge/maker-zip": "^6.0.0-beta.53",
-    "electron": "10.1.1"
+    "electron": "10.1.1",
+    "electron-builder": "^22.8.0",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "8.2.0",
+    "webpack": "^4.44.1"
+  },
+  "build": {
+    "appId": "com.eliasvincent.ms-todo-web",
+    "linux": {
+      "target": [
+        "deb",
+        "snap",
+        "rpm"
+      ],
+      "category": "Utility"
+    }
   }
 }

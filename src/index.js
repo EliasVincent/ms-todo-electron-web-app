@@ -14,10 +14,14 @@ const createWindow = () => {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadURL("https://to-do.live.com/tasks/");
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
+
+  mainWindow.setMenuBarVisibility(false)
+
+  //mainWindow.setIcon("src/icon.icns")
 };
 
 // This method will be called when Electron has finished
