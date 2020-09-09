@@ -1,8 +1,8 @@
 {
   "name": "ms-todo-web",
-  "productName": "ms-todo-web",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "productName": "Microsoft To-Do",
+  "version": "0.2.0",
+  "description": "Microsoft Todo Web",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -67,7 +67,9 @@
       "target": [
         "deb",
         "snap",
-        "rpm"
+        "AppImage",
+        "rpm",
+        "tar.bz2"
       ],
       "category": "Utility"
     }

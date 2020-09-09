@@ -4,6 +4,8 @@ Microsoft Todo as an Electron web wrapper for Linux. Main purpose of this app is
 ## Install
 [Latest releases](https://github.com/EliasVincent/ms-todo-electron-web-app/releases)
 
+Downloadable releases are available as .deb (Debian, Ubuntu, Linux Mint..), .rpm (Fedora, openSUSE, Red Hat..) and more.
+
 ## Build
 1. Git clone this repo.
 2. Install Nodejs.
